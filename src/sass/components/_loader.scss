@@ -1,0 +1,57 @@
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.loader {
+  .loader-inner {
+    .image-block {
+      position: absolute;
+      transform-origin: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.image-1 {
+        width: 300px;
+        left: 5%;
+        bottom: 10%;
+        @media (max-width: $layout-breakpoint-xsmall) {
+          left: 4%;
+          bottom: 28%;
+        }
+      }
+      &.image-3 {
+        width: 300px;
+        right: 0%;
+        top: 8%;
+        @media (max-width: $layout-breakpoint-xsmall) {
+          top: 16%;
+          right: 4%;
+        }
+      }
+      &.image-4 {
+        max-width: 350px;
+        width: 40%;
+        right: 0%;
+        bottom: 10%;
+        @media (max-width: $layout-breakpoint-xsmall) {
+          right: 6%;
+          bottom: 32%;
+        }
+      }
+      &.image-5 {
+        width: 280px;
+        left: 5%;
+        top: 12%;
+        @media (max-width: $layout-breakpoint-xsmall) {
+          left: 6%;
+          top: 18%;
+        }
+      }
+      img {
+        width: 80%;
+        object-fit: fill;
+      }
+    }
+  }
+}
